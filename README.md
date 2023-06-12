@@ -1388,11 +1388,7 @@ terraform --version
 - After running the job above, replace the script with the one below in order to test creating key pair for `ansible`. (Click `Configure`)
 
 ```bash
-PATH="$PATH:/usr/local/bin"
-ANS_KEYPAIR="petclinic-ansible-test-dev.key"
-AWS_REGION="us-east-1"
-aws ec2 create-key-pair --region ${AWS_REGION} --key-name ${ANS_KEYPAIR} --query "KeyMaterial" --output text > ${ANS_KEYPAIR}
-chmod 400 ${ANS_KEYPAIR}
+w
 ```
   * Click `Save`
 
